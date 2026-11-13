@@ -1,0 +1,28 @@
+
+# Python environments
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Local image collection
+images/*
+!images/.gitkeep
+archived_eval_images/
+
+# Generated AI data
+image_index.npz
+benchmark_results.json
+
+# Private configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Temporary files
+*.log

@@ -1,0 +1,181 @@
+
+/* ASSETLENS - PREMIUM DESIGN */
+
+[data-testid="stSidebar"] {
+    background: #141319;
+    border-right: 1px solid #493A20;
+}
+
+/* Buttons */
+div.stButton > button {
+    border-radius: 10px;
+    border: 1px solid #C69B45;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+div.stButton > button:hover {
+    border-color: #F3C969;
+    box-shadow: 0 0 12px #D4A63A45;
+}
+
+/* Image galleries */
+[data-testid="stImage"] img {
+    border-radius: 12px;
+    border: 1px solid #4A3D26;
+}
+
+/* Search fields */
+[data-testid="stTextInput"] input {
+    border-radius: 10px;
+    background: #17171F;
+}
+
+/* Section headings */
+h2, h3 {
+    color: #F3E3B8;
+}
+
+/* Dividers */
+hr {
+    border-color: #493A20;
+}
+
+/* PREMIUM GOLD IMAGE CARDS */
+
+[class*="st-key-asset_card_"] {
+    background: linear-gradient(145deg, #211B13, #121218);
+    border: 1px solid #B58A3D;
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+/* Gold highlight on hover */
+[class*="st-key-asset_card_"]:hover {
+    border-color: #F3C969;
+    box-shadow: 0 0 18px rgba(212, 166, 58, 0.25);
+    transform: translateY(-3px);
+}
+
+/* Rounded photograph corners */
+[class*="st-key-asset_card_"] img {
+    border-radius: 10px;
+}
+
+/* PREMIUM ASSETLENS SIDEBAR */
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #1C1915 0%,
+        #101014 100%
+    );
+    border-right: 1px solid #6D562A;
+}
+
+/* Sidebar navigation options */
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+[data-testid="stSidebar"] [role="radiogroup"] label:hover {
+    background: rgba(212, 166, 58, 0.10);
+    border-color: #6D562A;
+}
+
+/* Selected navigation option */
+[data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
+    background: rgba(212, 166, 58, 0.15);
+    border-color: #D4A63A;
+}
+
+/* Sidebar separators */
+[data-testid="stSidebar"] hr {
+    border-color: #6D562A;
+}
+
+/* Sidebar metric numbers */
+[data-testid="stSidebar"] [data-testid="stMetricValue"] {
+    color: #F3C969;
+}
+
+/* STEP 76 — FINAL VISUAL POLISH */
+
+/* Main content area */
+[data-testid="stMainBlockContainer"] {
+    max-width: 1550px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/* Professional headings */
+h1, h2, h3 {
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: #F3E3B8;
+    margin-top: 1rem;
+}
+
+/* Search inputs */
+[data-testid="stTextInput"] input {
+    background-color: #17171F;
+    border-radius: 12px;
+    min-height: 46px;
+    color: #F5F5F5;
+}
+
+/* Image presentation */
+[data-testid="stImage"] img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* Gold card animation */
+[class*="st-key-asset_card_"] {
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+    [data-testid="stMainBlockContainer"] {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .assetlens-hero {
+        padding: 24px;
+    }
+
+    .assetlens-hero h1 {
+        font-size: 36px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    [data-testid="stMainBlockContainer"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .assetlens-hero h1 {
+        font-size: 30px;
+    }
+
+    [class*="st-key-asset_card_"] {
+        padding: 10px;
+    }
+}
